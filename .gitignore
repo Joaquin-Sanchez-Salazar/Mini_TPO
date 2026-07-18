@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/*.executed.ipynb
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+
+# Confidential or reproducible data
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/README.md
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/README.md
+!data/processed/.gitkeep
+
+# Serialized models are environment-dependent and reproducible
+models/*.joblib
+models/*.pkl
+
+# Regenerable notebook exports
+reports/*.html
+
+# Row-level extracts derived from protected input data
+reports/tables/top_10_roi.csv
+reports/tables/bottom_10_roi.csv
+
+# Source case documents should not be published without permission
+*.pdf
+
+# Original input duplicates retained locally at the repository root
+/base (3).csv
+/Prueba Técnica_DS (2).pdf

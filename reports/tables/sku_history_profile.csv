@@ -1,0 +1,16 @@
+id_material,primera_fecha,ultima_fecha,observaciones,n_cadenas,descuento_min,descuento_max,duraciones_observadas,meses_historia,promociones_por_cadena,clasificacion_sku
+PD006,2024-07-08,2025-12-22,139,3,0.068,0.389,"5,7,10,14,21",18,Cadena01:55; Cadena02:37; Cadena03:47,sku_maduro
+PD007,2024-07-01,2025-12-22,141,3,0.081,0.398,"5,7,10,14,21",18,Cadena01:51; Cadena02:42; Cadena03:48,sku_maduro
+PD002,2024-07-01,2025-12-22,143,3,0.073,0.411,"5,7,10,14,21",18,Cadena01:46; Cadena02:46; Cadena03:51,sku_maduro
+PD003,2024-07-08,2025-12-22,143,3,0.073,0.398,"5,7,10,14,21",18,Cadena01:42; Cadena02:54; Cadena03:47,sku_maduro
+PD009,2024-07-01,2025-12-15,145,3,0.057,0.409,"5,7,10,14,21",18,Cadena01:45; Cadena02:48; Cadena03:52,sku_maduro
+PD001,2024-07-01,2025-12-22,152,3,0.063,0.388,"5,7,10,14,21",18,Cadena01:48; Cadena02:52; Cadena03:52,sku_maduro
+PD011,2024-07-01,2025-12-22,152,3,0.079,0.392,"5,7,10,14,21",18,Cadena01:51; Cadena02:49; Cadena03:52,sku_maduro
+PD013,2024-07-01,2025-12-22,152,3,0.052,0.396,"5,7,10,14,21",18,Cadena01:54; Cadena02:52; Cadena03:46,sku_maduro
+PD012,2024-07-01,2025-12-22,155,3,0.07,0.411,"5,7,10,14,21",18,Cadena01:48; Cadena02:54; Cadena03:53,sku_maduro
+PD005,2024-07-01,2025-12-15,161,3,0.059,0.403,"5,7,10,14,21",18,Cadena01:51; Cadena02:57; Cadena03:53,sku_maduro
+PD004,2024-07-01,2025-12-22,166,3,0.067,0.375,"5,7,10,14,21",18,Cadena01:58; Cadena02:56; Cadena03:52,sku_maduro
+PD008,2024-07-01,2025-12-22,168,3,0.068,0.404,"5,7,10,14,21,45",18,Cadena01:62; Cadena02:54; Cadena03:52,sku_maduro
+PD010,2024-07-01,2025-12-22,168,3,0.067,0.398,"5,7,10,14,21",18,Cadena01:58; Cadena02:58; Cadena03:52,sku_maduro
+PD014,2025-08-11,2025-12-22,38,3,0.078,0.384,"5,7,10,14,21",5,Cadena01:12; Cadena02:12; Cadena03:14,sku_reciente
+PD015,2025-08-11,2025-12-22,39,3,0.115,0.374,"5,7,10,14,21",5,Cadena01:14; Cadena02:10; Cadena03:15,sku_reciente

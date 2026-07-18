@@ -1,0 +1,4 @@
+fold,mae_directo,mae_dos_etapas,mejora_relativa,falsos_positivos_directo,falsos_positivos_dos_etapas,train_filas_con_uplift_oof,validation_filas,decision,guardrail
+2,0.09150466294007811,0.15334757725295278,-0.6758444031794592,0,0,301,337,conservar_roi_directo,uplift de train y validation generado OOF
+3,0.13418532587774493,0.14674602716897853,-0.0936071154507427,1,1,638,330,conservar_roi_directo,uplift de train y validation generado OOF
+4,0.1637045889836806,0.1692577319776563,-0.033921730774018194,1,1,968,356,conservar_roi_directo,uplift de train y validation generado OOF

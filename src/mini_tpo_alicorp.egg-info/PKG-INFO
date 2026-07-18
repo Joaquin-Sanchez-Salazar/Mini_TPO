@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: mini-tpo-alicorp
+Version: 0.4.0
+Summary: Mini Trade Promo Optimizer reproducible con analitica, modelado temporal y optimizacion robusta.
+Requires-Python: >=3.11
+License-File: NOTICE.md
+Requires-Dist: pandas>=2.0
+Requires-Dist: numpy>=1.24
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: scikit-learn==1.9.0
+Requires-Dist: scipy>=1.10
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: jupyter>=1.0
+Requires-Dist: nbconvert>=7.0
+Requires-Dist: pytest>=7.0
+Requires-Dist: pyarrow>=14.0
+Dynamic: license-file

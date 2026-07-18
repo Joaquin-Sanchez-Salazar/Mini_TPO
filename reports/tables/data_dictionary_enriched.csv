@@ -1,0 +1,17 @@
+variable,tipo,clasificacion_modelado,comentario
+fecha_inicio_tanda,Fecha,Disponible pre-promocion,Base para split temporal.
+id_material,ID,Disponible pre-promocion,Identificador de SKU.
+des_material,ID,Disponible pre-promocion,Descripcion/codigo comercial de SKU.
+des_marca,Categorica,Disponible pre-promocion,Marca o familia comercial.
+subcadena,Categorica,Disponible pre-promocion,Cadena donde se ejecuta la promocion.
+precio_base,Numerica,Disponible pre-promocion,Precio de referencia previo al descuento.
+factor_descuento,Numerica,Conocida al disenar promocion,Palanca de decision futura.
+duracion_dias,Numerica,Conocida al disenar promocion,Palanca de decision futura.
+volumen_base_sem,Numerica,Disponible pre-promocion,Feature valida por supuesto de la prueba; estimada sin informacion posterior.
+elasticidad_estimada,Numerica,Disponible pre-promocion,Feature valida por supuesto de la prueba; estimada sin informacion posterior.
+flag_secundario,Categorica,Conocida al disenar promocion,Mecanica/visibilidad secundaria; missing es informacion.
+volumen_promo,Resultado,Post-promocion,No apta como feature para predecir uplift.
+venta_promo,Variable derivada,Leakage,"Deriva de volumen observado, precio y descuento."
+inversion_promo,Variable derivada,Leakage,"Deriva de volumen observado, precio y descuento."
+uplift_real,Target de uplift,Target,Resultado observado a predecir.
+roi,Target ROI,Target,KPI oficial de Alicorp; valido como target y prohibido como predictor.

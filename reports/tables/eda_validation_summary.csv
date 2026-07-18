@@ -1,0 +1,48 @@
+check,column,status,affected_rows,detail
+required_column,fecha_inicio_tanda,ok,0,presente
+required_column,id_material,ok,0,presente
+required_column,des_material,ok,0,presente
+required_column,des_marca,ok,0,presente
+required_column,subcadena,ok,0,presente
+required_column,precio_base,ok,0,presente
+required_column,factor_descuento,ok,0,presente
+required_column,duracion_dias,ok,0,presente
+required_column,volumen_base_sem,ok,0,presente
+required_column,volumen_promo,ok,0,presente
+required_column,venta_promo,ok,0,presente
+required_column,inversion_promo,ok,0,presente
+required_column,uplift_real,ok,0,presente
+required_column,elasticidad_estimada,ok,0,presente
+required_column,flag_secundario,ok,0,presente
+required_column,roi,ok,0,presente
+exact_duplicates,*,ok,0,duplicados exactos
+business_key_duplicates,"fecha_inicio_tanda,id_material,subcadena,factor_descuento,duracion_dias",ok,0,duplicados por clave de negocio candidata
+missing,precio_base,ok,0,valores faltantes
+infinite,precio_base,ok,0,valores infinitos
+missing,factor_descuento,ok,0,valores faltantes
+infinite,factor_descuento,ok,0,valores infinitos
+missing,duracion_dias,ok,0,valores faltantes
+infinite,duracion_dias,ok,0,valores infinitos
+missing,volumen_base_sem,ok,0,valores faltantes
+infinite,volumen_base_sem,ok,0,valores infinitos
+missing,volumen_promo,ok,0,valores faltantes
+infinite,volumen_promo,ok,0,valores infinitos
+missing,venta_promo,ok,0,valores faltantes
+infinite,venta_promo,ok,0,valores infinitos
+missing,inversion_promo,ok,0,valores faltantes
+infinite,inversion_promo,ok,0,valores infinitos
+missing,uplift_real,ok,0,valores faltantes
+infinite,uplift_real,ok,0,valores infinitos
+missing,elasticidad_estimada,ok,0,valores faltantes
+infinite,elasticidad_estimada,ok,0,valores infinitos
+missing,roi,ok,0,valores faltantes
+infinite,roi,ok,0,valores infinitos
+negative_not_allowed,precio_base,ok,0,negativos no esperados
+negative_not_allowed,factor_descuento,ok,0,negativos no esperados
+negative_not_allowed,duracion_dias,ok,0,negativos no esperados
+negative_not_allowed,volumen_base_sem,ok,0,negativos no esperados
+negative_not_allowed,volumen_promo,ok,0,negativos no esperados
+negative_not_allowed,venta_promo,ok,0,negativos no esperados
+negative_not_allowed,inversion_promo,ok,0,negativos no esperados
+discount_outside_optimizer_domain,factor_descuento,warn,10,"fuera de [5%, 40%]"
+duration_outside_optimizer_domain,duracion_dias,warn,4,"fuera de [5, 21] dias"

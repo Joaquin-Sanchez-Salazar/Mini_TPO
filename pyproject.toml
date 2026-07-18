@@ -1,0 +1,28 @@
+[project]
+name = "mini-tpo-alicorp"
+version = "0.4.0"
+description = "Mini Trade Promo Optimizer reproducible con analitica, modelado temporal y optimizacion robusta."
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "scikit-learn==1.9.0",
+    "scipy>=1.10",
+    "pyyaml>=6.0",
+    "jupyter>=1.0",
+    "nbconvert>=7.0",
+    "pytest>=7.0",
+    "pyarrow>=14.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

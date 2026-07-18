@@ -1,0 +1,4 @@
+contexto,id_material,subcadena,uplift_rango_predicho,roi_rango_predicho,figura,advertencia
+buen_soporte,PD006,Cadena03,0.786169830986013,4.7315328347532395,reports/figures/modeling/response_curves/response_curve_buen_soporte.png,diagnostico de suavidad; no selecciona optimos
+sku_reciente,PD015,Cadena02,0.5170846894669114,4.728283251745665,reports/figures/modeling/response_curves/response_curve_sku_reciente.png,diagnostico de suavidad; no selecciona optimos
+soporte_bajo,PD014,Cadena03,0.5399266953896628,4.727982526111236,reports/figures/modeling/response_curves/response_curve_soporte_bajo.png,diagnostico de suavidad; no selecciona optimos

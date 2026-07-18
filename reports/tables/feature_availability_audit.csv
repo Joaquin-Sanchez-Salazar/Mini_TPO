@@ -1,0 +1,18 @@
+variable,rol,disponible_antes_tanda,metodologia_conocida,puede_usar_info_futura,riesgo_leakage,decision_modelado,evidencia,estado
+fecha_inicio_tanda,fecha/split,si,si,no,bajo,"conservar en indice, no feature numerica directa",campo de inicio,confirmada
+id_material,id/predictor,si,si,no,bajo,baseline,SKU conocido al decidir,confirmada
+des_material,reporting,si,si,no,bajo,excluir baseline por redundancia con SKU,1:1 con id_material,confirmada
+des_marca,categorica/reporting,si,si,no,medio,"reporting/cold start, no aporta adicional si SKU esta incluido",deterministica por SKU,confirmada
+subcadena,predictor,si,si,no,bajo,baseline,cadena conocida al disenar promocion,confirmada
+precio_base,numerica/reporting,si,si,no,medio,excluir baseline si es constante por SKU; opcional si no se usa SKU,constante por SKU en esta base,confirmada
+factor_descuento,palanca,si,si,no,bajo,baseline,decision de promocion,confirmada
+duracion_dias,palanca,si,si,no,bajo,baseline,decision de promocion,confirmada
+volumen_base_sem,predictor prepromocion,si,asumida,no,bajo,baseline,estimacion previa que escala el impacto absoluto,confirmada por supuesto de la prueba
+elasticidad_estimada,predictor prepromocion,si,asumida,no,bajo,baseline,estimacion interna previa de sensibilidad al precio,confirmada por supuesto de la prueba
+flag_secundario,mecanica,si,si,no,bajo,baseline si se conoce al recomendar,mecanica promocional,confirmada
+flag_secundario_missing,calidad,condicionado,si,posible,medio,"opcional sensibilidad, no baseline",estado missing podria no existir en decision futura,condicionada
+volumen_promo,resultado,no,si,si,alto,excluida,observado post-promocion,excluida
+venta_promo,resultado derivado,no,si,si,alto,excluida,deriva de volumen observado,excluida
+inversion_promo,resultado derivado,no,si,si,alto,excluida,deriva de volumen observado,excluida
+uplift_real,target,no,si,si,alto,target,resultado observado,excluida
+roi,target/KPI oficial,no,no disponible,si,target,"target valido, nunca predictor",KPI oficial entregado por Alicorp,target

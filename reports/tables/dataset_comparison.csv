@@ -1,0 +1,5 @@
+dataset,filas,columnas,uso
+Raw,2062,16,Fuente inalterada
+Clean full,2062,38,Auditoria completa y reversible
+Modeling domain,2048,38,Dominio 5%-40% y 5-21 dias
+Features seguras,2048,8,row_id mas siete predictores

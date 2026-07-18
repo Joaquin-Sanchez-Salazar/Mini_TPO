@@ -1,0 +1,42 @@
+dataset,check,passed,detail
+inputs,same_row_count,True,"2048, 2048, 2048"
+inputs,features_row_id_unique,True,2048
+inputs,targets_row_id_unique,True,2048
+inputs,index_row_id_unique,True,2048
+inputs,safe_schema_exact,True,"['row_id', 'id_material', 'subcadena', 'factor_descuento', 'duracion_dias', 'volumen_base_sem', 'elasticidad_estimada', 'flag_secundario']"
+inputs,targets_absent_from_features,True,targets excluded
+inputs,postpromo_absent_from_features,True,postpromo excluded
+inputs,audit_absent_from_features,True,audit excluded
+inputs,one_to_one_join,True,2048
+core,row_count,True,2048
+core,row_id_unique,True,2048
+core,deterministic_order,True,matches safe input
+core,columns_exact,True,"['row_id', 'id_material', 'subcadena', 'factor_descuento', 'duracion_dias', 'volumen_base_sem', 'elasticidad_estimada', 'flag_secundario', 'duracion_semanas', 'volumen_base_tanda', 'elasticidad_abs', 'descuento_x_elasticidad', 'descuento_x_duracion', 'factor_descuento_sq', 'duracion_dias_sq', 'log1p_volumen_base_sem', 'log1p_volumen_base_tanda', 'mes', 'trimestre', 'semana_anio', 'mes_sin', 'mes_cos', 'semana_anio_sin', 'semana_anio_cos']"
+core,no_duplicate_columns,True,unique column names
+core,no_targets_or_postpromo,True,[]
+core,no_audit_columns,True,[]
+core,no_infinite_numeric,True,finite numeric values
+core,no_unexpected_missing,True,0
+core,month_range,True,1..12
+core,quarter_range,True,1..4
+core,week_range,True,1..53
+core,mes_sin_range,True,-1..1
+core,mes_cos_range,True,-1..1
+core,semana_anio_sin_range,True,-1..1
+core,semana_anio_cos_range,True,-1..1
+optional_extended,row_count,True,2048
+optional_extended,row_id_unique,True,2048
+optional_extended,deterministic_order,True,matches safe input
+optional_extended,columns_exact,True,"['row_id', 'id_material', 'subcadena', 'factor_descuento', 'duracion_dias', 'volumen_base_sem', 'elasticidad_estimada', 'flag_secundario', 'duracion_semanas', 'volumen_base_tanda', 'elasticidad_abs', 'descuento_x_elasticidad', 'descuento_x_duracion', 'factor_descuento_sq', 'duracion_dias_sq', 'log1p_volumen_base_sem', 'log1p_volumen_base_tanda', 'mes', 'trimestre', 'semana_anio', 'mes_sin', 'mes_cos', 'semana_anio_sin', 'semana_anio_cos', 'precio_base', 'des_marca', 'flag_secundario_missing', 'sku_cadena', 'dias_desde_inicio_dataset']"
+optional_extended,no_duplicate_columns,True,unique column names
+optional_extended,no_targets_or_postpromo,True,[]
+optional_extended,no_audit_columns,True,[]
+optional_extended,no_infinite_numeric,True,finite numeric values
+optional_extended,no_unexpected_missing,True,0
+optional_extended,month_range,True,1..12
+optional_extended,quarter_range,True,1..4
+optional_extended,week_range,True,1..53
+optional_extended,mes_sin_range,True,-1..1
+optional_extended,mes_cos_range,True,-1..1
+optional_extended,semana_anio_sin_range,True,-1..1
+optional_extended,semana_anio_cos_range,True,-1..1

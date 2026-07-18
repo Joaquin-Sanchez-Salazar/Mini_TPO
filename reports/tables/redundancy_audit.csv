@@ -1,0 +1,4 @@
+chequeo,resultado,evidencia,decision
+id_material -> des_material,True,max descripciones por SKU=1,des_material queda para reporting; excluida del baseline.
+id_material -> des_marca,True,max marcas por SKU=1,des_marca queda para reporting/cold start; redundante con SKU en baseline.
+precio_base constante por SKU,True,max precios por SKU=1,precio_base queda fuera del baseline con SKU; opcion si se modela sin SKU.

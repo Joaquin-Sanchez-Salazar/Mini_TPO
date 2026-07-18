@@ -1,0 +1,21 @@
+feature,spearman_uplift,spearman_roi,observaciones,uso
+factor_descuento,0.5870738036751875,-0.9845738615717325,2048,diagnostico descriptivo; no seleccion automatica
+duracion_dias,0.022353268750090624,-0.015982520194610248,2048,diagnostico descriptivo; no seleccion automatica
+volumen_base_sem,-0.0004071747315251949,-0.006104720619531236,2048,diagnostico descriptivo; no seleccion automatica
+elasticidad_estimada,-0.3065213153280832,-0.03550359806422476,2048,diagnostico descriptivo; no seleccion automatica
+duracion_semanas,0.022353268750090624,-0.015982520194610248,2048,diagnostico descriptivo; no seleccion automatica
+volumen_base_tanda,0.02850847257938751,-0.012864312457821079,2048,diagnostico descriptivo; no seleccion automatica
+elasticidad_abs,0.3065213153280832,0.03550359806422476,2048,diagnostico descriptivo; no seleccion automatica
+descuento_x_elasticidad,0.6649885717552321,-0.7248518748612391,2048,diagnostico descriptivo; no seleccion automatica
+descuento_x_duracion,0.39394545012170623,-0.6378836890532084,2048,diagnostico descriptivo; no seleccion automatica
+factor_descuento_sq,0.5870738036751875,-0.9845738615717325,2048,diagnostico descriptivo; no seleccion automatica
+duracion_dias_sq,0.022353268750090624,-0.015982520194610248,2048,diagnostico descriptivo; no seleccion automatica
+log1p_volumen_base_sem,-0.0004071747315251949,-0.006104720619531236,2048,diagnostico descriptivo; no seleccion automatica
+log1p_volumen_base_tanda,0.02850808033865655,-0.012864223403651665,2048,diagnostico descriptivo; no seleccion automatica
+mes,-0.004356481127767299,-0.040450148103946065,2048,diagnostico descriptivo; no seleccion automatica
+trimestre,-0.011541232493897324,-0.03241204014348838,2048,diagnostico descriptivo; no seleccion automatica
+semana_anio,-0.02746784007350047,-0.022324588634740405,2048,diagnostico descriptivo; no seleccion automatica
+mes_sin,0.042573488851892216,-0.001834203493419916,2048,diagnostico descriptivo; no seleccion automatica
+mes_cos,0.0308491836530406,-0.05562774998279881,2048,diagnostico descriptivo; no seleccion automatica
+semana_anio_sin,0.041257092582547526,0.004241086549315726,2048,diagnostico descriptivo; no seleccion automatica
+semana_anio_cos,0.026347004978273376,-0.05015977898927674,2048,diagnostico descriptivo; no seleccion automatica

@@ -1,0 +1,13 @@
+feature_a,feature_b,spearman,relacion,impacto_modelo,decision,arboles
+factor_descuento,factor_descuento_sq,1.0,termino cuadratico,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+duracion_dias,duracion_semanas,1.0,transformacion lineal exacta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+duracion_dias,duracion_dias_sq,1.0,termino cuadratico,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+volumen_base_sem,log1p_volumen_base_sem,1.0,transformacion monotona,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+elasticidad_estimada,elasticidad_abs,-1.0,magnitud derivada,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+duracion_semanas,duracion_dias_sq,1.0,correlacion empirica alta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+volumen_base_tanda,log1p_volumen_base_tanda,0.9999999996507539,transformacion monotona,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+mes_cos,semana_anio_cos,0.984330939421973,correlacion empirica alta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+mes_sin,semana_anio_sin,0.9825844056221601,correlacion empirica alta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+mes,trimestre,0.9608042121239934,correlacion empirica alta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+mes,semana_anio,0.9347342640202329,correlacion empirica alta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"
+trimestre,semana_anio,0.9083022168530145,correlacion empirica alta,posible multicolinealidad en modelos lineales,conservar; evaluar regularizacion y ablation temporal,"potencialmente redundante, no necesariamente perjudicial"

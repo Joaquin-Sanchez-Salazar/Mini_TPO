@@ -1,0 +1,115 @@
+project:
+  name: mini_tpo_alicorp
+  raw_csv: data/raw/base_mini_tpo.csv
+  raw_pdf: data/raw/prueba_tecnica_ds.pdf
+  interim_full: data/interim/base_mini_tpo_clean_full.parquet
+  processed_modeling: data/processed/base_mini_tpo_modeling.parquet
+  safe_features: data/processed/model_features_safe.parquet
+  safe_targets: data/processed/model_targets.parquet
+  safe_index: data/processed/model_index.parquet
+  feature_manifest: data/processed/feature_manifest.json
+  engineered_core: data/processed/model_features_engineered_core.parquet
+  engineered_optional: data/processed/model_features_engineered_optional.parquet
+  feature_engineering_manifest: data/processed/feature_engineering_manifest.json
+  feature_engineering_report: reports/feature_engineering_report.md
+  feature_engineering_figures_dir: reports/figures/feature_engineering
+  oof_uplift: data/processed/oof_predictions_uplift.parquet
+  oof_roi: data/processed/oof_predictions_roi.parquet
+  final_test_uplift: data/processed/final_test_predictions_uplift.parquet
+  final_test_roi: data/processed/final_test_predictions_roi.parquet
+  modeling_report: reports/modeling_report.md
+  modeling_figures_dir: reports/figures/modeling
+  response_curves_dir: reports/figures/modeling/response_curves
+  models_dir: models
+  model_registry: models/model_registry.json
+  optimization_scenarios: data/processed/optimization_scenarios.parquet
+  optimization_report: reports/optimization_report.md
+  optimization_figures_dir: reports/figures/optimization
+  eda_report: reports/eda_data_quality_report.md
+  preparation_report: reports/data_preparation_report.md
+  figures_dir: reports/figures
+  tables_dir: reports/tables
+
+business_rules:
+  discount_min: 0.05
+  discount_max: 0.40
+  duration_min: 5
+  duration_max: 21
+  allowed_durations: [5, 7, 10, 14, 21]
+  uplift_floor_value: 0.05
+  uplift_floor_tolerance: 0.000001
+  near_constant_threshold: 0.95
+  discount_band_edges: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+  support_thresholds:
+    alto: {min_observations: 60, min_discount_bands: 4, min_durations: 4}
+    medio: {min_observations: 35, min_discount_bands: 3, min_durations: 3}
+    bajo: {min_observations: 15, min_discount_bands: 2, min_durations: 2}
+
+feature_engineering:
+  month_period: 12
+  week_period: 52
+  high_correlation_threshold: 0.90
+
+modeling:
+  random_seed: 42
+  final_test_months: 3
+  n_temporal_splits: 4
+  uncertainty_alpha: 0.10
+  response_discount_grid: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+  response_durations: [5, 7, 10, 14, 21]
+  two_stage_min_relative_improvement: 0.05
+
+optimization:
+  discount_step: 0.01
+  supported_durations: [5, 7, 10, 14, 21]
+  exploratory_durations: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+  recent_observations: 4
+  local_discount_tolerance: 0.025
+  min_local_support: 1
+  roi_epsilon_min: 0.01
+  roi_epsilon_error_fraction: 0.05
+  material_uplift_disagreement: 0.15
+  material_roi_disagreement: 0.10
+  support_penalty_roi:
+    soporte_alto: 0.00
+    soporte_medio: 0.01
+    soporte_bajo: 0.03
+    soporte_insuficiente: 0.10
+  support_penalty_uplift:
+    soporte_alto: 0.00
+    soporte_medio: 0.02
+    soporte_bajo: 0.06
+    soporte_insuficiente: 0.15
+
+columns:
+  id_columns: [id_material, des_material]
+  date_columns: [fecha_inicio_tanda]
+  categorical_columns: [des_marca, subcadena, flag_secundario]
+  numeric_columns:
+    - precio_base
+    - factor_descuento
+    - duracion_dias
+    - volumen_base_sem
+    - volumen_promo
+    - venta_promo
+    - inversion_promo
+    - uplift_real
+    - elasticidad_estimada
+    - roi
+  required_columns:
+    - fecha_inicio_tanda
+    - id_material
+    - des_material
+    - des_marca
+    - subcadena
+    - precio_base
+    - factor_descuento
+    - duracion_dias
+    - volumen_base_sem
+    - volumen_promo
+    - venta_promo
+    - inversion_promo
+    - uplift_real
+    - elasticidad_estimada
+    - flag_secundario
+    - roi

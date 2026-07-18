@@ -1,0 +1,8 @@
+hallazgo,evidencia,decision_futura,impacto_de_negocio
+Uplift aumenta con profundidad en el agregado,Medianas por banda con dispersion y diferencias por cadena,Modelar no linealidad e interacciones,Mas volumen potencial
+ROI no replica la trayectoria del uplift,Mediana y porcentaje negativo por banda,Targets separados y decision conjunta,Evitar destruir valor con descuentos altos
+Respuesta heterogenea por SKU y cadena,Soporte y resultados locales distintos,Modelo global con controles locales,Recomendaciones adaptadas
+Volumen base escala el impacto,Uplift similar produce unidades incrementales distintas,Evaluar error en porcentaje y unidades,Priorizar impacto absoluto
+Elasticidad diferencia sensibilidad,Uplift varia por bandas de elasticidad y descuento,Evaluar interaccion en la siguiente fase,Mejor discriminacion promocional
+Flag secundario controla otra mecanica,"Grupos difieren en uplift, ROI y diseno",Mantener categoria desconocido,Evitar atribuir respuesta solo al descuento
+Maximizar uplift no basta,"Retorno, inversion y soporte imponen trade-offs",Optimizacion multiobjetivo restringida,Balancear crecimiento y rentabilidad

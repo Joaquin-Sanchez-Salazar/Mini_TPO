@@ -1,0 +1,19 @@
+variable,rol,baseline,opcional,motivo
+id_material,prepromo_confirmada,True,False,
+subcadena,prepromo_confirmada,True,False,
+factor_descuento,prepromo_confirmada,True,False,
+duracion_dias,prepromo_confirmada,True,False,
+volumen_base_sem,prepromo_confirmada,True,False,
+elasticidad_estimada,prepromo_confirmada,True,False,
+flag_secundario,prepromo_confirmada,True,False,
+volumen_promo,postpromo/leakage,False,False,excluida
+venta_promo,postpromo/leakage,False,False,excluida
+inversion_promo,postpromo/leakage,False,False,excluida
+uplift_real,postpromo/leakage,False,False,excluida
+roi,postpromo/leakage,False,False,excluida
+precio_base,opcional/sensibilidad,False,True,no baseline
+des_marca,opcional/sensibilidad,False,True,no baseline
+flag_secundario_missing,opcional/sensibilidad,False,True,no baseline
+des_material,reporting,False,False,no baseline
+fecha_inicio_tanda,reporting,False,False,no baseline
+row_id,excluida,False,False,guardrail

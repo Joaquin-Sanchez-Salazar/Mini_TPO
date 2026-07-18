@@ -1,0 +1,4 @@
+case_id,escenarios,escenarios_factibles,descuento_min,descuento_max,duraciones,extrapolativos,desacuerdo_material
+caso_a_soporte_alto,180,52,0.05,0.4,"5,7,10,14,21",25,20
+caso_b_alto_volumen,180,58,0.05,0.4,"5,7,10,14,21",30,20
+caso_c_sku_reciente,180,23,0.05,0.4,"5,7,10,14,21",84,20
