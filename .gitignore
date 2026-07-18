@@ -71,3 +71,5 @@ reports/tables/bottom_10_roi.csv
 # Original input duplicates retained locally at the repository root
 /base (3).csv
 /Prueba Técnica_DS (2).pdf
+
+AGENTS.md
